@@ -8,12 +8,15 @@ import { HomeComponent } from './home/home.component';
 import { VideoCenterComponent } from './videos-center/video-center.component';
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailComponent } from './video-detail/video-detail.component';
-import {VideoService} from "./video.service";
+import {VideoService} from "./service/video.service";
 import {Http, HttpModule} from "@angular/http";
 import { FacilitiesCenterComponent } from './facilities-center/facilities-center.component';
 import { FacilitiesListComponent } from './facilities-list/facilities-list.component';
 import { FacilitiesDetailsComponent } from './facilities-details/facilities-details.component';
-import {FacilitiesService} from "./facilities.service";
+import {FacilitiesService} from "./service/facilities.service";
+import { SignInComponent } from './sign-in/sign-in.component';
+import {UserService} from "./service/user.service";
+import {AuthService} from "./service/auth.service";
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import {FacilitiesService} from "./facilities.service";
     VideoDetailComponent,
     FacilitiesCenterComponent,
     FacilitiesListComponent,
-    FacilitiesDetailsComponent
+    FacilitiesDetailsComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +36,7 @@ import {FacilitiesService} from "./facilities.service";
     FormsModule,
     HttpModule
   ],
-  providers: [VideoService, FacilitiesService],
+  providers: [VideoService, FacilitiesService, UserService, AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

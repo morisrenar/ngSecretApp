@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Facilities} from "../facilities";
-import {FacilitiesService} from "../facilities.service";
+import {Facilities} from "../model/facilities";
+import {FacilitiesService} from "../service/facilities.service";
 
 @Component({
   selector: 'app-facilities-center',

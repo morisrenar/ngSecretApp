@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Facilities} from "../facilities";
+import {Facilities} from "../model/facilities";
 
 @Component({
   selector: 'app-facilities-list',

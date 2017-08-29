@@ -12,5 +12,4 @@ export class FacilitiesService {
     return this._http.get(this._getUrl)
       .map((response: Response) => response.json());
   }
-
 }
